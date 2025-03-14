@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morgage calculation</title>
+    <link rel="stylesheet" href="index.css>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="header">
+                <h1> Mortgage Calculator</h1>
+                <div id="link">Clear All</div>
+            </div>
+
+            <div class="amount">
+                <div class="Ma">
+                    <label class="amoun" for="Morgage">Morgage Amount</label>
+                </div>
+                <br>
+                <div class="money">
+                    <div class="pound">&#163;</div>
+                    <input type="text" id="morgage" placeholder="Enter Morgage Amount">
+                </div>
+            </div>
+
+            <div class="term-interest">
+                <div class="term">
+                    <div class="T">
+                        <label class="tem" for="term">Mortgage Term</label>
+                    </div>
+                    <br>
+                    <div class="tarm">
+                        <input type="text" id="term" placeholder="Enter Term">
+                        <div class="year">
+                            <div class="new-year">years</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interest">
+                    <div class="Ir">
+                        <label for="interest">Interest Rate</label>
+                    </div>
+                    <br>
+                    <div class="rate">
+                        <input type="text" id="interest" placeholder="Enter Interest rate">
+                        <div class="percent">
+                            <div class="pent">%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="morgage-type">
+                <div class="type">
+                    <div class="Mt">
+                        <label for="Type">Mortgage Type</label>
+                    </div>
+                    <br>
+                    <div class="repay">
+                        <input type="radio" id="repay" name="Repayment">
+                        <label for="repay">Repayment</label>
+                    </div>
+
+                    <div class="interest-only">
+                        <input type="radio" id="interest-only" name="Repayment">
+                        <label for="interest-only">Interest Only</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calculate">
+                <button id="calculate">
+                    <div class="lac"><ion-icon name="calculator"></ion-icon></div>
+                    <div class="calc">Calculate Repayments</div>
+                </button>
+            </div>
+        </div>
+
+        <div class="results">
+            <div class="result">
+                <h2>Your results</h2>
+                <p>
+                    Your results are shown below based on the information <br>
+                    you provided. To adjust the results, edit the form and <br>
+                    click "Calculate Repayments" again.
+                </p>
+            </div>
+
+            <div class="repayment">
+                <h3>Your monthly repayments </h3>
+                <div id="credit"></div>
+                <hr>
+                
+                <div class="total">
+                    <p> Total you'll repay over the term</p>
+                    <div id="total"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
